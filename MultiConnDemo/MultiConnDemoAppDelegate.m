@@ -7,6 +7,7 @@
 //
 
 #import "MultiConnDemoAppDelegate.h"
+#import "MultiConnDemoViewController.h"
 
 @implementation MultiConnDemoAppDelegate
 
@@ -15,6 +16,11 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    MultiConnDemoViewController *mcViewController = [[MultiConnDemoViewController alloc] init];
+    
+    [[self window] setRootViewController:mcViewController];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
