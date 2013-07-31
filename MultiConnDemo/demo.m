@@ -129,8 +129,9 @@
   if (state == MCSessionStateConnected && self.session) {
     
     NSError *error;
-    
-    [self.session sendData:[@"BUT WHO WAS PHONE" dataUsingEncoding:NSUTF8StringEncoding] toPeers:[NSArray arrayWithObject:peerID] withMode:MCSessionSendDataReliable error:&error];
+    [self.session sendData:[@"UNRELIABLE MESSAGE" dataUsingEncoding:NSUTF8StringEncoding] toPeers:[NSArray arrayWithObject:peerID] withMode:MCSessionSendDataUnreliable error:&error];
+      
+    [self.session sendData:[@"RELIABLE MESSAGE" dataUsingEncoding:NSUTF8StringEncoding] toPeers:[NSArray arrayWithObject:peerID] withMode:MCSessionSendDataReliable error:&error];
     
   }
   
