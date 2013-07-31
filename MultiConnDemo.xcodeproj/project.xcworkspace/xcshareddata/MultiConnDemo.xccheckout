@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>47DE0E9B-0FC1-491C-927C-18473B0E93DC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MultiConnDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>601C6CC8-07F9-4D64-AC52-C589D7A93E1F</key>
+		<string>ssh://github.com/melaniecebula/multipeerdemo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MultiConnDemo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>601C6CC8-07F9-4D64-AC52-C589D7A93E1F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/melaniecebula/multipeerdemo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>601C6CC8-07F9-4D64-AC52-C589D7A93E1F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>601C6CC8-07F9-4D64-AC52-C589D7A93E1F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MultiConnDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>

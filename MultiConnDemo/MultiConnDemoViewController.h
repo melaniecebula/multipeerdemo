@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MultipeerConnectivity/MultipeerConnectivity.h>
 
-@interface MultiConnDemoViewController : UIViewController
+@interface MultiConnDemoViewController : UIViewController <MCAdvertiserAssistantDelegate, MCBrowserViewControllerDelegate, MCSessionDelegate>
 
 @end

@@ -21,6 +21,7 @@
 		808A724F17A8E84300EF54E8 /* MultiConnDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 808A724E17A8E84300EF54E8 /* MultiConnDemoTests.m */; };
 		808A725A17A8E8B300EF54E8 /* MultiConnDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 808A725917A8E8B300EF54E8 /* MultiConnDemoViewController.m */; };
 		808A725C17A8E95A00EF54E8 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808A725B17A8E95A00EF54E8 /* MultipeerConnectivity.framework */; };
+		80AF746817A9C21800A8E9F0 /* demo.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AF746717A9C21800A8E9F0 /* demo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		808A725817A8E8B300EF54E8 /* MultiConnDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiConnDemoViewController.h; sourceTree = "<group>"; };
 		808A725917A8E8B300EF54E8 /* MultiConnDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiConnDemoViewController.m; sourceTree = "<group>"; };
 		808A725B17A8E95A00EF54E8 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		80AF746617A9C21800A8E9F0 /* demo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demo.h; sourceTree = "<group>"; };
+		80AF746717A9C21800A8E9F0 /* demo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = demo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 		808A722F17A8E84300EF54E8 /* MultiConnDemo */ = {
 			isa = PBXGroup;
 			children = (
+				80AF746617A9C21800A8E9F0 /* demo.h */,
+				80AF746717A9C21800A8E9F0 /* demo.m */,
 				808A723817A8E84300EF54E8 /* MultiConnDemoAppDelegate.h */,
 				808A725817A8E8B300EF54E8 /* MultiConnDemoViewController.h */,
 				808A725917A8E8B300EF54E8 /* MultiConnDemoViewController.m */,
@@ -251,6 +256,7 @@
 			files = (
 				808A723617A8E84300EF54E8 /* main.m in Sources */,
 				808A725A17A8E8B300EF54E8 /* MultiConnDemoViewController.m in Sources */,
+				80AF746817A9C21800A8E9F0 /* demo.m in Sources */,
 				808A723A17A8E84300EF54E8 /* MultiConnDemoAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +452,7 @@
 				808A725417A8E84300EF54E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		808A725517A8E84300EF54E8 /* Build configuration list for PBXNativeTarget "MultiConnDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +461,7 @@
 				808A725717A8E84300EF54E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
