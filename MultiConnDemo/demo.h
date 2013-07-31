@@ -11,13 +11,9 @@
 
 @property (weak, nonatomic) IBOutlet UITextView *txtStatus;
 
-@property (weak, nonatomic) IBOutlet UIButton *buttonCreate;
+@property (weak, nonatomic) IBOutlet UIButton *browseButton;
 
-- (IBAction)refresh:(id)sender;
-
-- (void)advertising;
-
-
+@property (weak, nonatomic) IBOutlet UIButton *advertiseButton;
 
 @end
 
