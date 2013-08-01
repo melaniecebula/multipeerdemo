@@ -141,6 +141,7 @@
     
     //if (state == MCSessionStateConnected && self.session) {
     if (state == MCSessionStateConnected) {
+        NSLog(@"YALL STATE IS MCSESSIONSTATECONNECTED BITCH");
         NSError *error;
         [self.session sendData:[@"UNRELIABLE MESSAGE" dataUsingEncoding:NSUTF8StringEncoding] toPeers:[NSArray arrayWithObject:peerID] withMode:MCSessionSendDataUnreliable error:&error];
         
