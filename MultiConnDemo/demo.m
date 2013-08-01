@@ -48,7 +48,7 @@
     [self.view addSubview:_advertiseButton];
     
     _browseButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [_browseButton addTarget:self action:@selector(bMethod:) forControlEvents:UIControlStateNormal];
+    [_browseButton addTarget:self action:@selector(bMethod:) forControlEvents:UIControlEventTouchDown];
     [_browseButton setTitle:@"browse" forState:UIControlStateNormal];
     _browseButton.frame = CGRectMake(180.0, 210.0, 160.0, 40.0);
     [self.view addSubview:_browseButton];
@@ -58,9 +58,10 @@
     NSUUID * uuid = [NSUUID UUID];
     
     self.myPeerId = [[MCPeerID alloc] initWithDisplayName:[uuid UUIDString]];
+    //change display name to facebook username
     
     NSString *serviceType=@"p2ptest";
-    
+    //change servicetype to filter out who you can contact with (must be the same string to have contact)
     self.browser = [[MCNearbyServiceBrowser alloc] initWithPeer:self.myPeerId serviceType:serviceType];
     
     self.browser.delegate=self;
@@ -70,10 +71,6 @@
     
     self.session.delegate = self;
     
-    
-    //[self.browser startBrowsingForPeers];
-    
-    //[self advertising];
 }
 
 - (void)aMethod:(id)selector {
@@ -142,8 +139,8 @@
     
     NSLog(@"MCSessionDelegate :: didChangeState :: PeerId %@ changed to state %d",peerID,state);
     
-    if (state == MCSessionStateConnected && self.session) {
-        
+    //if (state == MCSessionStateConnected && self.session) {
+    if (state == MCSessionStateConnected) {
         NSError *error;
         [self.session sendData:[@"UNRELIABLE MESSAGE" dataUsingEncoding:NSUTF8StringEncoding] toPeers:[NSArray arrayWithObject:peerID] withMode:MCSessionSendDataUnreliable error:&error];
         
